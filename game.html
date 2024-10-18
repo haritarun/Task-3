@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Snake Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-info">
+            <p>Score: <span id="score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+            <p>Difficulty: 
+                <select id="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </p>
+            <div id="controls">
+                <button id="up-btn">Up</button>
+                <button id="left-btn">Left</button>
+                <button id="down-btn">Down</button>
+                <button id="right-btn">Right</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
